@@ -1,0 +1,6 @@
+language: ruby
+rvm:
+  - 2.2.4
+env:
+  - DEALBOT_API_KEY=secret PIPEDRIVE_API_KEY=secret DEALBOT_CONFIG="company: Acme Products"
+cache: bundler

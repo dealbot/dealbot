@@ -1,0 +1,6 @@
+.env
+.rspec
+spec/fixtures
+coverage/
+.sass-cache/
+_site/

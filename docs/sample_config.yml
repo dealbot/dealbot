@@ -1,0 +1,35 @@
+# Here are the triggers that Dealbot will watch for
+company: Acme Products
+triggers:
+  sdr: # A machine-friendly nickname for recording enrollment
+    enroll:
+      pipeline: 1
+      stage: 2
+    abandon:
+      pipeline: 1
+      stage: 4
+      win: true # Abandon the cadence when the Deal is won (default: true)
+      lose: false # Abandon the cadence when the Deal is lost (default: true)
+    cadences:
+      # One of these cadences will be selected at random
+      - 7x7     # A standard cadence from the library
+      - 5x12: 2 # Here we're assigning a weight so it's picked more often (default: 1)
+      - 1x1     # A custom cadence defined below
+  onboarding:
+    pipeline: 2
+    stage: 1
+    cadences:
+      - onboard
+cadences:
+# Define custom cadences here (optional)
+# Use CadenceML — https://github.com/dealbot/CadenceML
+  1x1:
+    cadence:
+      1:
+        - channel: email
+          title: Immediate breakup
+  onboard:
+    cadence:
+      20:
+        - channel: email
+          title: AE followup

@@ -1,0 +1,34 @@
+{
+  "name": "Dealbot",
+  "description": "Lightweight open-source sales automation system for Pipedrive from Faraday",
+  "keywords": [
+    "pipedrive",
+    "sales"
+  ],
+  "website": "http://dealbot.faraday.io",
+  "repository": "https://github.com/dealbot/dealbot",
+  "logo": "https://cdn.rawgit.com/dealbot/dealbot/master/dealbot.svg",
+  "success_url": "/setup",
+  "env": {
+    "MAINTAINER_EMAIL": {
+      "description": "Your email address. This is where we will send your Dealbot API key and important notifications from the app."
+    },
+    "PIPEDRIVE_API_KEY": {
+      "description": "Your Pipedrive API key. Find it at https://<yourcompany>.pipedrive.com/settings#api"
+    },
+    "DEALBOT_CONFIG": {
+      "description": "Your Dealbot configuration (in YAML). By default, Dealbot doesn't come pre-configured with any cadences to avoid cluttering your Pipedrive while you get things set up. For now, it's easiest to start by just correcting your company name and leaving configuration for later. On the other hand, if you want to get a head start, it's easiest to prepare your configuration in a text editor and paste it here. See https://github.com/dealbot/dealbot/wiki/Configuration",
+      "value": "company: Acme Products"
+    },
+    "DEALBOT_API_KEY": {
+      "description": "This will be generated for you and shared by email.",
+      "generator": "secret"
+    }
+  },
+  "scripts": {
+    "postdeploy": "bundle exec rake setup"
+  },
+  "addons": [
+    "sendgrid:starter"
+  ]
+}
