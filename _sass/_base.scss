@@ -1,0 +1,16 @@
+body {
+  font-family: 'Karla', sans-serif;
+  line-height: 1.6;
+  color: $body;
+  font-size: $main-font-size;
+}
+
+ul {
+  list-style: square;
+}
+
+a {
+  color: $teal;
+}
+
+* { box-sizing: border-box;}

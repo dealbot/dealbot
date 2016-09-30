@@ -1,0 +1,28 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+$main-font-size: 16px;
+
+$heliotrope: #C569FF;
+$bittersweet: #FF795D;
+$magenta: #E85EA5;
+$teal: #49ada6;
+$body: #444;
+$eggplant: #bc2a66;
+$gold: #e9d362;
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "base",
+  "header",
+  "main",
+  "home",
+  "configuration",
+  "zenburn",
+  "about",
+  "footer",
+  "slack"
+;
+
