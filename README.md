@@ -1,6 +1,6 @@
 <img src="https://cdn.rawgit.com/dealbot/dealbot/master/dealbot.svg" alt="Dealbot" width="200" />
 
-Dealbot is a lightweight sales (semi-)automation system that hooks into [Pipedrive](http://pipedrive.com) to schedule tasks based on predefined cadences.
+Dealbot is a lightweight sales (semi-)automation system that hooks into [Pipedrive](https://pipedrive.com/taf/faraday1) to schedule tasks based on predefined cadences.
 
 [![Build Status](https://travis-ci.org/dealbot/dealbot.svg?branch=master)](https://travis-ci.org/dealbot/dealbot) [![Coverage Status](https://coveralls.io/repos/github/dealbot/dealbot/badge.svg?branch=master)](https://coveralls.io/github/dealbot/dealbot?branch=master)
 
