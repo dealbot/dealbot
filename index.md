@@ -31,7 +31,7 @@ From your friends at [Faraday](http://faraday.io)
 <section class="question">
 ## What do I need?
 
-* A [Pipedrive](http://pipedrive.com) account you love
+* A [Pipedrive](https://pipedrive.com/taf/faraday1) account you love
 * A free [Heroku](http://heroku.com) account
 * About 15 minutes and some moderate technical ability to get things set up
 </section>
