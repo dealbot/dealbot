@@ -203,7 +203,7 @@ triggers:
       stage: 4
     cadences:
       - 7x7
-      - 5x12: 2
+      - 5x11: 2
   onboarding:
     enroll:
       pipeline: 2
