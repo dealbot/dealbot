@@ -46,7 +46,7 @@ module Dealbot
       end
 
       def old_pipeline
-        previous['pipeline_id']
+        previous && previous['pipeline_id']
       end
 
       def new_pipeline
@@ -54,7 +54,7 @@ module Dealbot
       end
 
       def old_stage
-        previous['stage_id']
+        previous && previous['stage_id']
       end
 
       def new_stage
